@@ -1,12 +1,64 @@
+// colors
 $first-color: #fff;
 $back-color: #000;
 $primary-color: #5e20a4;
 $secondary-color: #00c88c;
 
+// screen size
+$computer-screen: 1440px;
+$tablet-screen: 930px;
+$mobile-screen: 480px;
+
 // Breakpoints
 
 @mixin breakpoint($width) {
-    @media screen and (max-width: $width) {
-      @content;
-    }
+  @media screen and (max-width: $width) {
+    @content;
   }
+}
+
+// Interaction
+@mixin link-hover($color, $shadow, $size) {
+  &:hover {
+    border-bottom: 2px solid $color;
+    color: $color;
+    text-shadow: $size $size $shadow;
+    transition: 0.2s;
+  }
+}
+
+@mixin btn-click {
+  &:after {
+    content: '';
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s;
+  }
+  &:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+  }
+}
+
+// style
+@mixin btn-style($color) {
+  @include btn-click();
+  background: $color;
+  border-radius: 4px;
+  border: none;
+  color: $first-color;
+  cursor: pointer;
+  font-size: 0.8rem;
+  overflow: hidden;
+  padding: 12px 21px;
+  position: relative;
+  transition-duration: 0.5s;
+}

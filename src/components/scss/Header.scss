@@ -1,0 +1,71 @@
+@import './main.scss';
+
+@include breakpoint(930px) {
+  .left-header {
+    nav {
+      display: none;
+    }
+  }
+}
+
+@include breakpoint(480px) {
+  .rigth-header {
+    .btn-sing-in {
+      display: none;
+    }
+    margin: 0 16px;
+  }
+}
+
+header {
+  background-color: aqua;
+  color: $first-color;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 500;
+  justify-content: space-between;
+  left: 0;
+  margin: auto;
+  max-width: $computer-screen;
+  position: absolute;
+  right: 0;
+}
+
+.left-header {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin: 0 20px;
+
+  ul {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    li {
+      display: inline-block;
+      a {
+        @include link-hover($first-color, $back-color, 2px);
+        font-size: 1.05rem;
+        color: $first-color;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.rigth-header {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  margin: 0 32px;
+  .btn-share-host {
+    @include btn-style($secondary-color);
+  }
+  .btn-sing-in {
+    @include link-hover($first-color, $back-color, 2px);
+    color: $first-color;
+    font-size: 0.8rem;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+}
