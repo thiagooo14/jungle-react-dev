@@ -1,0 +1,21 @@
+@import './components/scss/main.scss';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  color: $primary-color;
+}
+
+a, a:visited {
+  font-weight: 500;
+  transition: .15s;
+  text-underline-position: under;
+  // &:focus, &:hover {
+  //   color: scale-color(#5e20a4, $saturatin: 50%, $lightness: 30%)
+  // }
+}

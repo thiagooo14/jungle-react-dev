@@ -1,0 +1,12 @@
+$first-color: #fff;
+$back-color: #000;
+$primary-color: #5e20a4;
+$secondary-color: #00c88c;
+
+// Breakpoints
+
+@mixin breakpoint($width) {
+    @media screen and (max-width: $width) {
+      @content;
+    }
+  }

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="43px" height="42px" viewBox="0 0 43 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Home-Page-UPDATE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-153.000000, -408.000000)">
+        <g id="BANNER">
+            <g id="HL-COPY" transform="translate(152.563226, 201.000000)">
+                <g id="Play-BTN" transform="translate(0.000000, 207.000000)">
+                    <g id="Group-2" transform="translate(1.000000, 0.000000)">
+                        <circle id="Background" fill="#00C88C" cx="21" cy="21" r="21"></circle>
+                        <path d="M30.3732719,20.24 L15.6843318,13.24 C15.4101382,13.12 15.2926267,13 14.9792627,13 C14.5483871,13 14,13.28 14,13.8 L14,28.2 C14,28.72 14.5483871,29 14.9792627,29 C15.2926267,29 15.4101382,28.88 15.6843318,28.76 L30.3732719,21.76 C30.6866359,21.6 31,21.44 31,21 C31,20.56 30.6866359,20.4 30.3732719,20.24 Z" id="Icon" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
