@@ -1,7 +1,7 @@
 @import './main.scss';
 
 header {
-  color: $first-color;
+  color: $bright-color;
   display: flex;
   font-size: 1rem;
   font-weight: 500;
@@ -26,9 +26,9 @@ header {
     li {
       display: inline-block;
       a {
-        @include link-hover($first-color, $back-color, 2px);
+        @include link-hover($bright-color, $dark-color, 2px);
         font-size: 1.05rem;
-        color: $first-color;
+        color: $bright-color;
         text-decoration: none;
       }
     }
@@ -44,8 +44,8 @@ header {
     @include btn-style($secondary-color);
   }
   .btn-sing-in {
-    @include link-hover($first-color, $back-color, 2px);
-    color: $first-color;
+    @include link-hover($bright-color, $dark-color, 2px);
+    color: $bright-color;
     font-size: 0.8rem;
     text-decoration: none;
     margin-top: 10px;

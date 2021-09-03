@@ -22,7 +22,7 @@ $hero-gradient: linear-gradient(
   margin-left: 8vw;
   width: 80vw;
   article {
-    color: $first-color;
+    color: $bright-color;
     h1 {
       font-size: 2.5rem;
       font-weight: 500;
@@ -40,8 +40,8 @@ $hero-gradient: linear-gradient(
       display: flex;
       gap: 16px;
       a {
-        @include link-hover($first-color, $back-color, 2px);
-        color: $first-color;
+        @include link-hover($bright-color, $dark-color, 2px);
+        color: $bright-color;
         text-decoration: none;
       }
     }
