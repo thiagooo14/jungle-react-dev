@@ -1,22 +1,5 @@
 @import './main.scss';
 
-@include breakpoint(930px) {
-  .left-header {
-    nav {
-      display: none;
-    }
-  }
-}
-
-@include breakpoint(480px) {
-  .rigth-header {
-    .btn-sing-in {
-      display: none;
-    }
-    margin: 0 16px;
-  }
-}
-
 header {
   color: $first-color;
   display: flex;
@@ -66,5 +49,22 @@ header {
     font-size: 0.8rem;
     text-decoration: none;
     margin-top: 10px;
+  }
+}
+
+@include breakpoint($tablet-screen) {
+  .left-header {
+    nav {
+      display: none;
+    }
+  }
+}
+
+@include breakpoint($mobile-screen) {
+  .rigth-header {
+    .btn-sing-in {
+      display: none;
+    }
+    margin: 0 16px;
   }
 }
