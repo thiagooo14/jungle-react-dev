@@ -37,7 +37,7 @@ function Hero() {
             <a href='/'>See hapu in action (27 seconds)</a>
           </div>
         </article>
-        <img className='hero-img' src={banner} alt='Baner' />
+        <img className='hero-img' src={banner} alt='conection example' />
       </div>
     </section>
   );

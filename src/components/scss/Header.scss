@@ -1,7 +1,6 @@
 @import './main.scss';
 
 header {
-  color: $bright-color;
   display: flex;
   font-size: 1rem;
   font-weight: 500;
@@ -14,8 +13,8 @@ header {
 }
 
 .left-header {
-  display: flex;
   align-items: center;
+  display: flex;
   gap: 40px;
   margin: 0 20px;
 
@@ -62,9 +61,9 @@ header {
 
 @include breakpoint($mobile-screen) {
   .rigth-header {
+    margin: 0 16px;
     .btn-sing-in {
       display: none;
     }
-    margin: 0 16px;
   }
 }

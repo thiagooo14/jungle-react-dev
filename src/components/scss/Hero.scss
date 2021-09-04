@@ -9,7 +9,7 @@ $hero-gradient: linear-gradient(
 .hero {
   background-blend-mode: overlay;
   background-image: url('../../assets/images/banner_image.png'), $hero-gradient;
-  background-position: center center;
+  background-position: center;
   background-size: cover;
   height: 616px;
 }
@@ -32,7 +32,7 @@ $hero-gradient: linear-gradient(
     }
     p {
       font-size: 1.2rem;
-      line-height: 24px;
+      line-height: 1.5rem;
       margin-bottom: 24px;
     }
     div {
@@ -82,6 +82,7 @@ $hero-gradient: linear-gradient(
       }
       div {
         margin-top: 60px;
+        justify-content: center;
       }
     }
   }
