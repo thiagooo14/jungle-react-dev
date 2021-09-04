@@ -1,21 +1,20 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Header from './Header';
 import { banner } from '../assets/images';
 import { play } from '../assets/vectors';
 import './scss/Hero.scss';
 
 function Hero() {
-  const [ABTest, setABTest] = useState(
-    parseInt(localStorage.getItem('AB'), 10)
-  );
 
-  useEffect(() => {
-    if (Number.isNaN(ABTest)) {
-      const ABValue = Math.floor(Math.random() * 2);
-      localStorage.setItem('AB', ABValue);
-      setABTest(parseInt(localStorage.getItem('AB'), 10));
-    }
-  }, [ABTest]);
+  const ABTest = +localStorage.getItem('AB')
+
+  const ABCheck = () => {
+    const ABValue = Math.floor(Math.random() * 2);
+    localStorage.setItem('AB', ABValue);
+  }
+
+  ABCheck();
+
 
   return (
     <section className='hero'>

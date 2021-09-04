@@ -3,6 +3,7 @@ $bright-color: #fff;
 $dark-color: #000;
 $primary-color: #5e20a4;
 $secondary-color: #00a870;
+$text-color: #3d3d3d;
 
 // screen size
 $computer-screen: 1440px;
@@ -61,4 +62,8 @@ $mobile-screen: 480px;
   padding: 12px 21px;
   position: relative;
   transition-duration: 0.5s;
+}
+
+@mixin dual-wrapper {
+  color: $text-color;
 }

@@ -4,6 +4,7 @@ import Section2 from './Body/Section2';
 import Section3 from './Body/Section3';
 import Section4 from './Body/Section4';
 import Sectio5 from './Body/Section5';
+import './scss/Body.scss'
 
 function Body() {
   return (

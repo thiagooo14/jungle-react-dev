@@ -24,7 +24,7 @@
 }
 
 
-@include breakpoint(930px) {
+@include breakpoint($tablet-screen) {
   .sector {
     flex-direction: column;
     height: 216px;
@@ -40,12 +40,9 @@
 @include breakpoint($mobile-screen) {
   .sector {
     .info {
-      h2 {
-        max-width: 66%;
-      }
       p {
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 0.8rem;
+        line-height: 1.3rem;
       }
     }
   }
