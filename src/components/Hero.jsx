@@ -5,7 +5,6 @@ import { play } from '../assets/vectors';
 import './scss/Hero.scss';
 
 function Hero() {
-
   const ABTest = +localStorage.getItem('AB')
 
   const ABCheck = () => {
