@@ -105,4 +105,29 @@ $mobile-screen: 480px;
   }
 }
 
+@mixin single-column {
+  align-items: center;
+  color: $text-color;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  .section-text {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
+@mixin single-tablet {
+  margin: 64px;
+  .section-text {
+    h2 {
+      font-size: 1.3rem;
+      line-height: 2rem;
+      font-weight: 500;
+    }
+  }
+}
+
+@mixin single-phone {
+  margin: 64px 4.5vw;
+}

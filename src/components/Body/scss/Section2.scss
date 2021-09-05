@@ -1,0 +1,47 @@
+@import '../../scss/main.scss';
+
+.section2 {
+  @include single-column();
+  margin: 64px auto;
+  h1 {
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+  p {
+    font-size: 1.15rem;
+    line-height: 1.5rem;
+    margin: 16px 0;
+  }
+  .forms {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    input {
+      border: 1px solid #dfdfdf;
+      border-radius: 4px;
+      padding: 0 20px;
+      height: 44px;
+    }
+    .submit {
+      @include btn-style($secondary-color);
+      height: 44px;
+      margin: 0;
+    }
+  }
+}
+
+@include breakpoint($tablet-screen) {
+  .section2 {
+    @include single-tablet;
+    .forms {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}
+
+@include breakpoint($mobile-screen) {
+  .section2 {
+    @include single-phone;
+  }
+}
