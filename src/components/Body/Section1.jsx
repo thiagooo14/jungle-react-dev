@@ -7,11 +7,11 @@ function Section1() {
     <div>
       <section className='section1'>
         <div className='section-text'>
-          <h2>
+          <h1>
             Share your home,
             <br />
             nanny and costs
-          </h2>
+          </h1>
           <p>
             You have a fantastic home, a fantastic nanny and wouldn’t cutting
             your costs in half be, well, fantastic?! If only it was easy to

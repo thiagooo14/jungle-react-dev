@@ -86,7 +86,8 @@ $mobile-screen: 480px;
   margin: 64px 10vw;
   text-align: center;
   .section-text {
-    h2 {
+    h1
+     {
       font-size: 1.3rem;
       line-height: 2rem;
       font-weight: 500;
@@ -121,7 +122,8 @@ $mobile-screen: 480px;
 @mixin single-tablet {
   margin: 64px;
   .section-text {
-    h2 {
+    h1
+     {
       font-size: 1.3rem;
       line-height: 2rem;
       font-weight: 500;

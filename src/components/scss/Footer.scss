@@ -1,0 +1,134 @@
+@import './main.scss';
+
+footer {
+  background: $bright-color;
+}
+
+.footer-main {
+  @include single-column;
+  padding: 80px 0 24px;
+  h1 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2rem;
+    margin-bottom: 16px;
+  }
+  p {
+    line-height: 1.5rem;
+    font-size: 1.15rem;
+  }
+}
+
+.footer-btn {
+  @include btn-style($primary-color);
+  align-items: center;
+  display: flex;
+  gap: 21px;
+  margin: 32px 0 24px;
+  width: 304px;
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    span:nth-child(1) {
+      font-size: 1rem;
+      line-height: 1.75rem;
+    }
+    span:nth-child(2) {
+      font-size: 0.75rem;
+      line-height: 1rem;
+    }
+  }
+}
+
+.footer-nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  max-width: $computer-screen;
+  margin: 58px 128px;
+  .logo {
+    width: 15vw;
+  }
+  ul {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    li {
+      display: inline-block;
+      a {
+        @include link-hover($text-color, $dark-color, 0.5px);
+        color: $text-color;
+        font-size: 0.9rem;
+        font-weight: 500;
+        line-height: 1.25rem;
+        text-decoration: none;
+      }
+    }
+  }
+  .social {
+    display: flex;
+    gap: 16px;
+    margin-inline: 5px;
+    a {
+      align-items: center;
+      border-radius: 100%;
+      display: flex;
+      &:hover {
+        background: scale-color($color: #cacaca, $lightness: -10%);
+      }
+    }
+  }
+}
+
+.footer-copy {
+  font-size: 0.7;
+  opacity: 0.6;
+  padding: 32px 0;
+  text-align: center;
+}
+
+.divider {
+  width: 54vw;
+  height: 2px;
+  background-color: #dfdfdf;
+  margin: auto;
+}
+
+@include breakpoint($tablet-screen) {
+  .footer-main {
+    padding: 40px 0 0;
+    h1 {
+      font-size: 1.3rem;
+      line-height: 32px;
+      font-weight: 500;
+    }
+    p {
+      line-height: 1.75rem;
+    }
+  }
+  .footer-nav {
+    flex-direction: column;
+    gap: 24px;
+    .logo {
+      width: auto;
+    }
+  }
+  .divider {
+    width: 74.5vw;
+  }
+}
+
+@include breakpoint($mobile-screen) {
+  .footer-nav {
+    margin: 48px 0;
+    ul {
+      flex-wrap: wrap;
+      width: 266px;
+      gap: 16px 30px;
+    }
+  }
+  .divider {
+    width: 90vw;
+  }
+}
