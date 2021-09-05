@@ -71,6 +71,7 @@ $mobile-screen: 480px;
   .section-text {
     display: flex;
     flex-direction: column;
+    gap: 40px;
     h1 {
       font-size: 1.75rem;
       line-height: 2rem;
