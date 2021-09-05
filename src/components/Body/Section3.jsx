@@ -6,7 +6,7 @@ function Section3() {
   return (
     <div>
       <section className='section3'>
-        <img src={price} alt='payment exemple' />
+        <img src={price} alt='payment sample' />
         <div className='section-text'>
           <h1>Shared payments made simple</h1>
           <p>

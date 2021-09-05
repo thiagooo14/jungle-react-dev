@@ -6,7 +6,7 @@ function Section5() {
   return (
     <div >
       <section className='section5'>
-        <img src={diary} alt='diary' className='diary' />
+        <img src={diary} alt='diary' className='diary icon' />
         <div className='section-text'>
           <h1>Coming soon: Nanny Share Daily Diary!</h1>
           <p>

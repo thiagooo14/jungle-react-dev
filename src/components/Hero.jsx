@@ -5,15 +5,14 @@ import { play } from '../assets/vectors';
 import './scss/Hero.scss';
 
 function Hero() {
-  const ABTest = +localStorage.getItem('AB')
+  const ABTest = +localStorage.getItem('AB');
 
   const ABCheck = () => {
     const ABValue = Math.floor(Math.random() * 2);
     localStorage.setItem('AB', ABValue);
-  }
+  };
 
   ABCheck();
-
 
   return (
     <section className='hero'>
@@ -31,7 +30,9 @@ function Hero() {
               : 'Connect with other local families to share a nanny from as low as $10.00/hr each. Create your family profile today to get started.'}
           </p>
           <div>
-            <img src={play} alt='play-img' />
+            <button type='button' className='play-button'>
+              <img src={play} alt='play-buton' />
+            </button>
             <a href='/'>See hapu in action (27 seconds)</a>
           </div>
         </article>

@@ -39,6 +39,13 @@ $hero-gradient: linear-gradient(
       align-items: center;
       display: flex;
       gap: 16px;
+      .play-button{
+        align-items: center;
+        border-radius: 100%;
+        border: none;
+        cursor: pointer;
+        display: flex;
+      }
       a {
         @include link-hover($bright-color, $dark-color, 2px);
         color: $bright-color;

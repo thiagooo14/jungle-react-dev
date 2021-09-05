@@ -25,7 +25,7 @@ function Section1() {
           </p>
           <a href='/'>Ready to get started?</a>
         </div>
-        <img src={badge} alt='logo' />
+        <img src={badge} alt='aplication example' />
       </section>
       <div className='divider' />
     </div>

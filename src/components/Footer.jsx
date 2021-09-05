@@ -15,7 +15,7 @@ function Footer() {
         <h1>Become a nanny share host</h1>
         <p>Takes less than 5 minutes to get started</p>
         <button className='footer-btn'>
-          <img src={calendar} alt='calendar' />
+          <img src={calendar} alt='calendar icon' />
           <div>
             <span>Create Your Nanny Share</span>
             <span>Takes less than 5 minutes</span>
@@ -45,13 +45,13 @@ function Footer() {
         </nav>
         <div className='social'>
           <a href='https://www.facebook.com/' target='_blank' rel='noreferrer'>
-            <img src={facebook} alt='Facebook' />
+            <img src={facebook} alt='Facebook logo' />
           </a>
           <a href='https://www.twitter.com/' target='_blank' rel='noreferrer'>
-            <img src={twitter} alt='Twitter' />
+            <img src={twitter} alt='Twitter logo' />
           </a>
           <a href='https://www.instagram.com/' target='_blank' rel='noreferrer'>
-            <img src={instagram} alt='Instagram' />
+            <img src={instagram} alt='Instagram logo' />
           </a>
         </div>
       </div>
