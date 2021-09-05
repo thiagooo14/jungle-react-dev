@@ -1,0 +1,31 @@
+@import '../../scss/main.scss';
+
+.section5 {
+  @include single-column();
+  margin: 96px 23vw;
+  .section-text {
+    gap: 40px;
+    h1 {
+      margin-top: 40px;
+      font-size: 1.7rem;
+      line-height: 32px;
+      font-weight: 500;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.7rem;
+    }
+  }
+}
+
+@include breakpoint($tablet-screen) {
+  .section5 {
+    @include single-tablet;
+  }
+}
+
+@include breakpoint($mobile-screen) {
+  .section5 {
+    @include single-phone;
+  }
+}
