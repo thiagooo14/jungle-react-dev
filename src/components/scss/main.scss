@@ -64,6 +64,45 @@ $mobile-screen: 480px;
   transition-duration: 0.5s;
 }
 
-@mixin dual-wrapper {
+@mixin dual-column {
   color: $text-color;
+  display: flex;
+  justify-content: center;
+  .section-text {
+    display: flex;
+    flex-direction: column;
+    h1 {
+      font-size: 1.75rem;
+      line-height: 2rem;
+    }
+  }
+  & > img {
+    width: 70vw;
+  }
 }
+
+@mixin dual-tablet {
+  margin: 64px 10vw;
+  text-align: center;
+  .section-text {
+    h2 {
+      font-size: 1.3rem;
+      line-height: 2rem;
+      font-weight: 500;
+    }
+  }
+  & > img {
+    width: 70vw;
+  }
+}
+
+@mixin dual-phone {
+  margin: 64px 4.5vw;
+  .section-text {
+    p {
+      margin: 16px 0 24px;
+    }
+  }
+}
+
+
