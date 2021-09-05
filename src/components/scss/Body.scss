@@ -1,12 +1,19 @@
+@import './main.scss';
+
 .divider {
   width: 54vw;
   height: 2px;
   background-color: #dfdfdf;
   margin: auto;
-//   @include breakpoint(930px) {
-//     width: 74.5vw;
-//   }
-//   @include breakpoint(480px) {
-//     width: 90vw;
-//   }
+}
+@include breakpoint($tablet-screen) {
+  .divider {
+    width: 74.5vw;
+  }
+}
+
+@include breakpoint($mobile-screen) {
+  .divider {
+    width: 90vw;
+  }
 }

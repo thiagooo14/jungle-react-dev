@@ -1,5 +1,27 @@
 @import '../../scss/main.scss';
 
-.section-text{
-    background-color: aqua;
+.section1 {
+  @include dual-column();
+  gap: 4vw;
+  margin: 120px 9vw 120px 16vw;
+  img {
+    width: 39vw;
+  }
+}
+
+@include breakpoint($tablet-screen) {
+  .section1 {
+    @include dual-tablet();
+    flex-direction: column-reverse;
+    gap: 24px;
+  }
+}
+
+@include breakpoint($mobile-screen) {
+  .section1 {
+    @include dual-phone();
+    img {
+      width: 85vw;
+    }
+  }
 }
