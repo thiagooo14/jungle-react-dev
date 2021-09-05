@@ -1,0 +1,36 @@
+@import '../../scss/main.scss';
+
+.section3 {
+  @include dual-column();
+  gap: 3vw;
+  margin: 96px 16vw;
+  img {
+    width: 60vw;
+  }
+}
+
+@include breakpoint($tablet-screen) {
+  .section3 {
+    @include dual-tablet;
+    flex-direction: column;
+    gap: 40px;
+    img {
+      width: 60vw;
+    }
+  }
+}
+
+@include breakpoint($mobile-screen) {
+  .section3 {
+    @include dual-phone;
+    margin-inline: 4.4vw;
+    .section-text {
+      h1 {
+        margin: 0 19vw;
+      }
+      img {
+        width: 86.5vw;
+      }
+    }
+  }
+}
