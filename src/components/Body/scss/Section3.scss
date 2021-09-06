@@ -12,6 +12,7 @@
 @include breakpoint($tablet-screen) {
   .section3 {
     @include dual-tablet;
+    align-items: center;
     flex-direction: column;
     gap: 40px;
     img {

@@ -1,10 +1,22 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import JungleContext from '../context/JungleContext';
 import './scss/Section2.scss';
 
 function Section2() {
-  const { handleSubmit, setEmail, setName, email, name } =
-    useContext(JungleContext);
+  const {
+    handleSubmit,
+    setEmail,
+    invalid,
+    setName,
+    setInvalidText,
+    email,
+    name,
+    invalidText,
+  } = useContext(JungleContext);
+
+  useEffect(() => {
+    if (invalid) setInvalidText('');
+  }, [invalid, setInvalidText]);
 
   return (
     <div>
@@ -15,35 +27,36 @@ function Section2() {
             Leave us your name and email and we’ll update you as soon as a share
             becomes available in your area!
           </p>
-          <form className='forms'>
-            <input
-              type='text'
-              name='your name'
-              id='your-name'
-              placeholder='Your name'
-              onChange={({ target }) => setName(target.value)}
-              required
-            />
-            <input
-              type='email'
-              name='your email'
-              id='your-email'
-              placeholder='your email'
-              onChange={({ target }) => setEmail(target.value)}
-              required
-            />
-            <button
-              type='submit'
-              className='submit'
-              onClick={(e) => {
-                e.preventDefault();
-                handleSubmit(name, email);
-              }}
-            >
-              Send
-            </button>
-          </form>
+          <span>{invalidText}</span>
         </div>
+        <form className={invalidText ? 'forms alert' : 'forms'}>
+          <input
+            type='text'
+            name='your name'
+            id='your-name'
+            placeholder='Your name'
+            onChange={({ target }) => setName(target.value)}
+            required
+          />
+          <input
+            type='email'
+            name='your email'
+            id='your-email'
+            placeholder='your email'
+            onChange={({ target }) => setEmail(target.value)}
+            required
+          />
+          <button
+            type='submit'
+            className='submit'
+            onClick={(e) => {
+              e.preventDefault();
+              handleSubmit(name, email);
+            }}
+          >
+            Send
+          </button>
+        </form>
       </section>
 
       <div className='divider' />

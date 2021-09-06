@@ -12,6 +12,14 @@
     line-height: 1.5rem;
     margin: 16px 0;
   }
+  span {
+    color: #F00;
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+  .alert input:invalid {
+    border: 1px solid #f73772;
+  }
   .forms {
     display: flex;
     gap: 12px;
