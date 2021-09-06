@@ -1,10 +1,11 @@
-// IMPORTANTE
-// FAZER TRATAMENTO DO ESTADO
-
-import React from 'react';
+import React, { useContext } from 'react';
+import JungleContext from '../context/JungleContext';
 import './scss/Section2.scss';
 
 function Section2() {
+  const { handleSubmit, setEmail, setName, email, name } =
+    useContext(JungleContext);
+
   return (
     <div>
       <section className='section2'>
@@ -15,9 +16,30 @@ function Section2() {
             becomes available in your area!
           </p>
           <form className='forms'>
-            <input placeholder='Your name' required />
-            <input type='email' placeholder='Your email' required />
-            <button type='submit' className='submit'>
+            <input
+              type='text'
+              name='your name'
+              id='your-name'
+              placeholder='Your name'
+              onChange={({ target }) => setName(target.value)}
+              required
+            />
+            <input
+              type='email'
+              name='your email'
+              id='your-email'
+              placeholder='your email'
+              onChange={({ target }) => setEmail(target.value)}
+              required
+            />
+            <button
+              type='submit'
+              className='submit'
+              onClick={(e) => {
+                e.preventDefault();
+                handleSubmit(name, email);
+              }}
+            >
               Send
             </button>
           </form>
