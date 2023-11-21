@@ -1,3 +1,6 @@
+#OBSERVAÇÃO
+esse codigo não esta rodando, funciona apenas leitura, estou atualizando com mais detalhes
+
 # React challenge JungleDev!
 
 This project was developed by Thiago Tavares, as technical challenge for JungleDevs. The objective was to replicate a ready-made design shared through [Figma](https://www.figma.com/file/iBxoiuoSXy3SiOAnwXo2Np/Frontend-%E2%80%93-Challenge-1).
